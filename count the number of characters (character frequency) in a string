@@ -1,0 +1,11 @@
+# count the number of characters (character frequency) in a string
+
+s = raw_input("Enter the string:")
+def count_char(s):
+    char_dict={}
+    for char in s:
+        char_dict[char] = 0
+    for char in s:
+        char_dict[char] += 1
+    return char_dict
+print (count_char(s))
