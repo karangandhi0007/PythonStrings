@@ -1,0 +1,10 @@
+'''
+Created on Jul 19, 2017
+ 
+@author: gandhik
+# '''
+# Write a Python program to calculate the length of a string.
+s = raw_input("Enter the Word :")
+def len_string(s):
+    return (len(s))
+print (len(s))
