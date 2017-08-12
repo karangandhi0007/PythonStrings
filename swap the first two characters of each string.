@@ -1,0 +1,13 @@
+#    Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string.  
+# Sample String : 'abc', 'xyz' 
+# Expected Result : 'xyc abz'
+
+s = raw_input("Enter the first string:")
+t = raw_input("Enter the second string")
+word1 = s[0:2]
+word2 = t[0:2]
+def two_strings(a, b):
+    a = a.replace(word1, word2)
+    b = b.replace(word2, word1)
+    return a + " " + b
+print(two_strings(s, t))
