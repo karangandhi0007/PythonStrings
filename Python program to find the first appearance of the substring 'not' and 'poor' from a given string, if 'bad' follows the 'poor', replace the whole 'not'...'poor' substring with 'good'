@@ -1,0 +1,15 @@
+# Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string, if 'bad' follows the 'poor', replace the whole 'not'...'poor' substring with 'good'. Return the resulting string.  
+# Sample String : 'The lyrics is not that poor!'
+# Expected Result : 'The lyrics is good!'
+
+s = "The lyrics is not that poor !"
+a = s.find('not')
+b = s.find('poor')
+
+def replace_sub(x):
+    if a != -1 and b != -1:
+        x = x[:a] + "good"
+        return x
+    else:
+        print("SubString not found")
+print (replace_sub(s))
