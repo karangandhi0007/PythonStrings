@@ -1,0 +1,8 @@
+# Write a Python function that takes a list of words and returns the length of the longest one.
+
+
+s = raw_input("Enter the sentence:")
+s = s.split()
+print (s)
+y = max(s,key=len)
+print (y)
